@@ -1,0 +1,204 @@
+@charset "utf-8";
+
+header {
+  background-color:white;
+  height:80px;
+  border-bottom:1px solid silver;
+  position: relative;
+
+  overflow: hidden;
+}
+
+a {
+  text-decoration:none;
+}
+
+h1 {
+  color:white;
+}
+
+body {
+  margin:0px;
+  padding:0px;
+}
+
+.contents {
+  min-height: 100vh;
+  padding-bottom: 150px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.logo {
+  display: inline-block;
+  height: 80px;
+  overflow: hidden;
+}
+
+.logo a {
+  display: block;
+}
+
+.logo img   {
+  height: 80px;
+  width: auto;
+  margin-left: 80px;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 auto;
+  margin-right: 70px;
+}
+
+nav a {
+  color:black;
+  padding: 30px 30px;
+}
+
+nav li {
+  display: inline-block;
+  padding-left: 3%;
+  padding-right: 3%;
+  font-size: 17px;
+}
+
+nav li:hover {
+  cursor:pointer;
+}
+
+
+.top {
+  background-image: url("top-background.jpg");
+  height:100px;
+  background-size: cover;
+  padding:50px 0 100px 0 ;
+  position:relative;
+  top:00px;
+}
+
+.top__wrapper h1 {
+  font-size:8vw;
+  letter-spacing:10px;
+  opacity:0.8;
+  position:absolute;
+  top: 50px;
+  left: 100px;
+  line-height: 0;
+}
+
+.main__contents {
+  height:650px;
+  width: 80vw;
+  background-color:#eeeeee;
+  font-family: 'Economica', sans-serif;
+  text-align: center;
+  overflow: hidden;
+  margin: 0 auto;
+
+}
+
+/* ここにコンテンツのCSS記述 */
+
+
+footer {
+  color:white;
+  background-color:#222222;
+  height:150px;
+  width:100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.btn__wrapper {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+}
+
+.btn {
+  color:white;
+  display:block;
+  margin: 5px 5px;
+  padding:8px 24px;
+  margin-left: 30px;
+}
+
+.fab {
+  margin-right:10px;
+}
+
+.twitter {
+  background-color:#55acee;
+
+}
+
+.facebook {
+  background-color:#3B5998;
+}
+
+
+.info__wrapper {
+  text-align: center;
+}
+
+.info__author {
+  padding-top: 30px;
+  margin: 0 0;
+}
+
+.info__wrapper h2 {
+  font-size:35px;
+  font-weight: normal;
+  margin:0 0;
+}
+
+.copyright {
+  font-size: 10px;
+}
+
+@media screen and (max-width:600px) {
+	/*　画面サイズが600px以下の場合ここの記述が適用される　*/
+
+  header {
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+  }
+
+  header a {
+    text-align: center;
+  }
+  
+  .logo img {
+    margin-left: initial;
+  }
+
+  nav ul {
+    margin-right: initial;
+  }
+
+  nav a {
+    padding: 0 15px;
+  }
+
+  .top__wrapper h1 {
+    position: absolute;
+    top: 50px;
+    left: 20px;
+  }
+
+  .main__contents {
+    width: 100vw;
+  }
+
+  .btn__wrapper {
+    display: none;
+  }
+}
